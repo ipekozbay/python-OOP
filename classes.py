@@ -9,7 +9,7 @@ class Ucus():
         self.kapasite=kapasite
         self.yolcu=yolcu
 
-    def anonsn_yap(self ):
+    def anons_yap(self ):
 
         return "{} sefer sayılı  {} - {} ucusumuz {} dk surecek".format(
             self.kod,
@@ -18,5 +18,5 @@ class Ucus():
             self.sure)
 
 ucus2 = Ucus('TK78','23.00','01.55',175,200,150)
-cikti=ucus2.anonsn_yap()
+cikti=ucus2.anons_yap()
 print(cikti)
