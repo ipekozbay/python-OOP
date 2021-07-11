@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Flying():
     airline = "THY"
 
@@ -62,3 +63,27 @@ print("remaining ticket ",current_issue)
 flying_1.ticket_sales(75)
 flying_1.ticket_sales(5)
 flying_1.ticket_cancellation(5)
+=======
+class Ucus():
+    havayolu = "THY"
+
+    def __init__(self, kod,kalkis,varis,sure,kapasite,yolcu):
+        self.kod=kod
+        self.kalkis=kalkis
+        self.varis=varis
+        self.sure=sure
+        self.kapasite=kapasite
+        self.yolcu=yolcu
+
+    def anons_yap(self ):
+
+        return "{} sefer sayılı  {} - {} ucusumuz {} dk surecek".format(
+            self.kod,
+            self.kalkis,
+            self.varis,
+            self.sure)
+
+ucus2 = Ucus('TK78','23.00','01.55',175,200,150)
+cikti=ucus2.anons_yap()
+print(cikti)
+>>>>>>> 22be60fa3573a02d3ba29af614fbcd176f072294
