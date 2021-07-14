@@ -7,7 +7,6 @@ class Travel():
     def announcement(self):
         print(" welcome to {}-{} trip".format(self.departure , self.arrival)) 
 
-
 class Ship(Travel):
 
   def __init__(self, breaking_places ):
