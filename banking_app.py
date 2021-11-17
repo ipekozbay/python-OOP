@@ -6,8 +6,9 @@ class Customer():
 
     def register() :
         option = int(input("if you are a corporate customer press 1 or if you are a individual customer press 2 : "))
+        while True:
 
-        if option == 1 :
+         if option == 1 :
                 
                 companİES = []
                 company_numberS = []
@@ -17,6 +18,7 @@ class Customer():
 
                 if (company in companİES) : 
                     print("this company is already registered  ")
+                    break
                     
                 else:
                     print("this company registered.")    
@@ -24,12 +26,13 @@ class Customer():
 
                 if comp_num in company_numberS: 
                     print("this company number is already registered  ")
+                    break
 
                 else:
                     print("this company number registered.")    
                     companİES.append(comp_num)
 
-        else: # for indıvidual customer 
+         else: # for indıvidual customer 
 
                 person_nationaity_numberS = []
                 person_mailS = []
@@ -41,6 +44,7 @@ class Customer():
 
                 if nation_num in  person_nationaity_numberS:
                     print("this nationality number is already registered.")
+                    break
 
 
                 else:
@@ -49,6 +53,7 @@ class Customer():
 
                 if e_mail in person_mailS  :
                     print("this mail is already registered.")
+                    break
 
                 else:
                     print("this mail registered.")
@@ -56,12 +61,12 @@ class Customer():
 
                 if tel_number in person_telephone_numberS  :
                     print("this telephone number is already registered.")
+                    break
 
                 else:
                     print("this telephone number registered.")
-                    person_telephone_numberS.append(tel_number)      
-                       
-
+                    person_telephone_numberS.append(tel_number)    
+                           
 class individual_customer(Customer):
     def __init__(self, nationality_id, name,telephone_number, password, mail ):
         Customer.__init__(self, 1,147852963)
