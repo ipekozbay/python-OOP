@@ -30,6 +30,15 @@ class worker:
     def phone_number(phone):
         return phone.split()
 
+    def __repr__(self) :
+        return "full name : {} ,mail: {}".format(self.full_name(),self.mail)
+
+    def __str__(self):
+        return "full name : {} ,mail: {}".format(self.full_name(),self.mail)
+
+    def __add__(self,other):
+        return self.salary + other.salary    
+
 
 employee1 = worker("ipek", "ozbay", 1000)
 employee2 = worker("zeynep", "yarbasi", 2000)
@@ -50,3 +59,9 @@ print(new_employee1.mail)
 
 phone1 = "0123 654 78 88 "
 print(worker.phone_number(phone1))
+
+print(employee1 + employee2)
+
+# print(employee1) 
+# print(employee1.__repr__())
+# print(repr(employee1))
